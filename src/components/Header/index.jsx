@@ -14,23 +14,23 @@ function Header(props) {
             <Container>
                 <Row className="justify-content-between">
                     <Col xs="auto">
-                        <a
-                            className="header__link header__title"
-                            href="https://www.facebook.com/nguyenxnguyen93"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <NavLink
+                            exact
+                            className="header__title"
+                            to="/photos"
+                            activeClassName="header__title--active"
                         >
-                            <i class="fab fa-facebook"></i>hello
-                        </a>
+                            <span><i className="fas fa-home" /></span><span>HOME</span>
+                        </NavLink>
                     </Col>
                     <Col xs="auto">
                         <NavLink
                             exact
                             className="header__link"
-                            to="/photos"
+                            to="/sign-in"
                             activeClassName="header__link--active"
                         >
-                            <i class="fas fa-home"></i>
+                            Sign In
                         </NavLink>
                     </Col>
                 </Row>
